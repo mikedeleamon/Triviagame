@@ -93,7 +93,7 @@ $('#nextbtn').on('click',function(){
 		displayQuestion(i);
 	}
 })
-$('.answer').on('click', isRight())
+$('.answer').on('click', isRight(this))
 
 
 
