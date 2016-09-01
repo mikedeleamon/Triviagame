@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Welcome to trivia !</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+</head>
+<body>
+<div class="container">
+	
+	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">
+	        <!-- <img alt="Brand" src="assets/images/pokemon.png" id="wolf"> -->
+	      </a>
+	       <p class="navbar-text nav-right" id=brandy> Trivia Game</p>
+		      <ul class="nav navbar-nav">
+		      <li><a class="active" href="#home">Home</a></li>
+			  <!-- <li><a href="#rules">Rules</a></li>
+			  <li><a href="#feedPika">Feed Pikachu!</a></li>
+			  <li><a href="#battle">Battle</a></li> -->
+			 </ul>
+		</div>
+	   </div>
+	</nav>
+
+
+	<div class="panel panel-default">
+		<!-- question goes here  -->
+		<div class="panel-heading" id="question" ></div>
+		<button type="button" class="btn btn-success btn-lg" id="start"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+		<div class="panel-body">
+			<p id = "qbody"></p>
+		</div>
+		<!-- answers go here --> 
+		<div class="list-group">
+		  <button type="button" class="list-group-item" id="a1"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></button>
+		  <button type="button" class="list-group-item" id="a2"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></button>
+		  <button type="button" class="list-group-item" id="a3"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></button>
+		  <button type="button" class="list-group-item" id="a4"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></button>
+		  <!-- <button type="button" class="list-group-item" id="a5"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></button> -->
+		</div>
+		<br>
+		<br>
+		<button type="button" class="btn btn-success btn-lg" id="nextbtn"> NeXt</button>
+		<br>
+		<!-- <button type="button" class="btn btn-default btn-lg"></button> -->
+		<div class="progress">
+		  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 2%">
+		    <span class="sr-only">45% Complete</span>
+		</div>
+</div>
+	</div>
+</div>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>
