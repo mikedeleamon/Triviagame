@@ -63,7 +63,7 @@ var stopwatch = {
 
 
 //Trivia
-var i = -1;
+var i ;
 var trivia = [
 //questions
 ['how many states in the USA are connected?','What year did man first reach the moon?', 'which is the most popular pokemon?', 'Are there more men or woman on the planet?'],
@@ -85,14 +85,16 @@ console.log(trivia[0][0])
 
 $('#start').on('click',function(){
 	console.log('i hear you')
-	i++;
+	i=0;
 	displayQuestion(i);
+	
 	
 })
 
 $('#nextbtn').on('click',function(){
-	i++;
+	i++
 	if (i>0){
+		
 		console.log("i hear you boss")
 		displayQuestion(i);
 	}
