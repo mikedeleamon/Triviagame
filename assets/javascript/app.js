@@ -14,8 +14,8 @@ var stopwatch = {
     reset: function () {
         stopwatch.time = 0;
         stopwatch.lap = 1;
-        //change the "display" div to "00:00"
-        $(".well").html("00:00")
+        //change the "display" div to ":00"
+        $(".well").html(":00")
         //empty the "laps" div
         
     },
@@ -85,11 +85,15 @@ console.log(trivia[0][0])
 
 $('#start').on('click',function(){
 	console.log('i hear you')
+	i++;
 	displayQuestion(i);
+	
 })
 
 $('#nextbtn').on('click',function(){
+	i++;
 	if (i>0){
+		console.log("i hear you boss")
 		displayQuestion(i);
 	}
 })
@@ -101,12 +105,14 @@ $('.answer').on('click', isRight(this))
 // function displays queston
 
 function displayQuestion(i){
-	i++;
+	//i++;
 	$('#question').html("question "+i);
 	$('#qbody').html(trivia[0][i]);
 	console.log(trivia[0][i]);
 	showAnswer(i);
 	if (stopwatch.time==0) {
+		console.log("i got here")
+		stopwatch.stop;
 		("#question").html("you ran out of time, press next for the next question")
 		
 		stopwatch.time=11;
